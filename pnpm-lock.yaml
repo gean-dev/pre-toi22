@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@astropub/icons@0.2.0':
+    hash: 1ba1d5af62762fc4e3f82c325a9bcb29140984a626b3f20fd8e5b4a819eb4077
+    path: patches/@astropub__icons@0.2.0.patch
+
 importers:
 
   .:
     dependencies:
       '@astropub/icons':
         specifier: ^0.2.0
-        version: 0.2.0(astro@5.18.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3))
+        version: 0.2.0(patch_hash=1ba1d5af62762fc4e3f82c325a9bcb29140984a626b3f20fd8e5b4a819eb4077)(astro@5.18.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3))
       '@tailwindcss/vite':
         specifier: ^4.1.5
         version: 4.2.2(vite@6.4.2(jiti@2.6.1)(lightningcss@1.32.0))
@@ -1899,7 +1904,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astropub/icons@0.2.0(astro@5.18.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3))':
+  '@astropub/icons@0.2.0(patch_hash=1ba1d5af62762fc4e3f82c325a9bcb29140984a626b3f20fd8e5b4a819eb4077)(astro@5.18.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3))':
     dependencies:
       astro: 5.18.1(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)
 

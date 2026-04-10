@@ -1,0 +1,13 @@
+diff --git a/dist/ArrowLeft.astro b/dist/ArrowLeft.astro
+index 499cf685fb0e786926abf2f4d8d24b2dd0659bce..cfcba81f88250f530160861fd1fec991c54b27f9 100644
+--- a/dist/ArrowLeft.astro
++++ b/dist/ArrowLeft.astro
+@@ -1,7 +1,7 @@
+ ---
+ /*! radix-icons | MIT License | https://icons.modulz.app/ */
+ 
+-export { Props } from './Props.ts';
++export type { Props } from './Props.ts';
+ 
+ let {
+ 	size,
