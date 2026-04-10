@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Image } from "astro:assets";
+import logo from "../assets/pretoi22-logo.png";
+---
+
+<Layout title="Gean Dev Pre TOI22">
+  <main class="w-full text-white bg-slate-800">
+    <div class="h-screen" id="greet">
+      <div class="h-full flex justify-center items-center flex-col text-center">
+        <Image
+          src={logo}
+          alt="logo"
+          class="object-cover"
+          style="max-width: 300px;"
+        />
+        <h1 class="text-5xl font-bold mt-5">
+          Pre TOI
+          <!-- <span class="line-through">19</span> -->
+          <!-- <span class="text-red-300 line-through">20</span> -->
+          <span class="text-red-400">22</span> by <span class="text-orange-500"
+            ><a
+              href="https://github.com/gean-dev"
+              target="_blank"
+              rel="noopener">Gean Dev</a
+            ></span
+          >
+        </h1>
+        <!-- <h2 class="text-3xl pt-4">
+          Gean Dev by Admin <span class="text-red-500"
+            ><a href="https://โอถอก.ไทย" target="_blank" rel="noopener"
+              >OTOG©</a
+            ></span
+          >
+        </h2> -->
+        <div class="text-2xl pt-3">
+          <p>
+            จัดขึ้น วันที่
+            <span
+              ><a
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+22+Day+1&iso=20260418T18&p1=28&ah=5"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="text-cyan-400">18</span>
+              </a>
+              และ
+              <a
+                href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Pre+TOI+22+Day+2&iso=20260419T18&p1=28&ah=5"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="text-cyan-400">19</span>
+              </a>
+              April 2026
+              <span class="text-pink-300">18:00 - 23:00</span>
+            </span>
+          </p>
+          <p>
+            ด้วยระบบ
+            <span
+              ><a
+                href="https://cms-dev.github.io/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="text-yellow-500">CMS</span>
+              </a>
+              แบบเดียวกับ
+              <span class="text-orange-400">TOI</span>
+              และ
+              <span class="text-red-400">IOI</span>
+              <span><a href="#about">😱</a></span>
+            </span>
+          </p>
+          <!-- <p class="text-2xl font-bold my-2 text-purple-300">
+            Join our discord in bio
+          </p> -->
+          <!-- <button class="rounded-md bg-green-600 px-4 py-2 my-3">
+            <a href="ranking/" target="_blank" rel="noopener">
+              <p class="text-white text-lg">ดูอันดับการแข่งขัน</p>
+            </a>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("reveal-prize")!.addEventListener("click", () => {
+      if (document.getElementById("reveal-prize")!.innerHTML != "ไม่มี 😭") {
+        document.getElementById("reveal-prize")!.innerHTML = "ไม่มี 😭";
+        document
+          .getElementById("reveal-prize")!
+          .classList.remove("bg-purple-400");
+        document.getElementById("reveal-prize")!.classList.add("text-8xl");
+      } else {
+        document
+          .querySelector("#register")!
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script></Layout
+>
